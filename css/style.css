@@ -5,14 +5,14 @@ body, h1, p, ul {
     margin:0;
 }
 
-
+/* Header */
 #header{
     position: fixed;
     width: 310px;
     top:0px;
     left:0px;
     bottom: 0px;
-    background: #001b38;
+    background: #040b14;
 }
 
 #header .profile img{
@@ -25,15 +25,146 @@ body, h1, p, ul {
 #header .profile h1{
     font-size: 20px;
     font-weight: 600px;
+    color: #fff;
     text-align-last: center;
 }
 
 .social-media a {
-    font-size: 18px;
+    font-size: 19px;
     display: inline-block;
+    text-decoration: none;
     color: #fff;
+    padding: 1px 0;
     border-radius: 50%;
     background-color: #2c2f3f;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    transition: 0.9s;
+    margin-left: 5px;
+   
+}
+
+.social-media a:hover{
+    cursor: pointer;
+    background-color: #e23870
+}
+
+/* nav-menu */
+
+.nav-menu *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu{
+    list-style: none;
+    padding: 25px;
+}
+
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu a{
+    display: flex;
+    color: white;
+    padding: 12px 15px;
+}
+
+.nav-menu a, 
+.nav-menu a:focus {
+  align-items: center;
+  color: #a8a9b4;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu li a:focus, a:hover span{
+    color: #fff;
+}
+
+.nav-menu li a:focus i{
+  text-decoration: none;
+  color: #e23870;
+}
+
+
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 18px;
+  padding-right: 12px;
+  color: #6f7180;
+}
+
+
+/**/
+
+/*--------------------------------------------------------------
+# 
+--------------------------------------------------------------*/
+#little-presentation {
+  width: 100%;
+  height: 100vh;
+  background: url("../imgs/bg-section.jpg") top center;
+  background-size: cover;
+}
+
+.presentation-container{
+    position: relative;
+}
+
+.presentation-container h1, p{
+    color: #fff;
+    font-size: 32px;
+}
+
+.presentation-container p{
+  overflow: hidden; 
+  border-right: .15em solid #e23870; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret-easter {
+  from, to { border-color: transparent }
+  50% { border-color: #e23870; }
+}
+
+
+
+.presentation-container h1{
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+
+#footer{
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  width: 300px;
+
+}
+
+.footer-container{
+    text-align: center;
+}
+
+.footer-container span{
+    color: 	#00ff2b;
 }

@@ -6,35 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="css/style.css" >
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header id="header">
             <div class="flex flex-col">
                 <div class="profile">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQE3rRsYokkVVA/profile-displayphoto-shrink_800_800/0/1657497983349?e=1665619200&v=beta&t=QvzD4ueupDFll1Yo-cInggY1eLpnhsYifFWttREdiCw" alt="">
+                    <img src="https://avatars.githubusercontent.com/u/59180172?v=4" alt="">
                     <h1>Marlon Brendo</h1>
                     <div class="social-media text-center mt-2 ">
-                        <a href="#facebook">f</a>
-                        <a href="#linkedin">l</a>
-                        <a href="#github">g</a>
+                        <a href="https://www.linkedin.com/in/marlon-brendo-ramos-204763225/">
+                            <i class="fa fa-linkedin" style="font-size: 17px;"></i>
+                        </a>
+                        <a href="https://github.com/MarlonBrendonx">
+                            <i class="fa fa-github " aria-hidden="true" style="font-size: 17px;"></i>
+                        </a>
                     </div>
                 </div>
-                <nav>
+                <nav class="nav-menu">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#portifolio">Portifólio</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+                        <li><a href="#about"><i class="fa fa-user-o" aria-hidden="true"></i><span>Sobre</span></a></li>
+                        <li><a href="#portifolio"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>Portifólio</span></a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Contato</span></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section>
-            <div data-aos="fade-in">
-                <h1>Marlon Brendo</h1>
-                <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+        <section id="little-presentation" class="flex justify-center align-items-center items-center">
+            <div class="presentation-container">
+                <h1>Marlon  Brendo</h1>
+                <p>I'm Developer</p>
             </div>
-        </section>
-        
+       </section>
+        <main id="main" class="flex justify-center align-items-center">
+            <section id="about">
+                <div class="about-container">
+                    <h1>Sobre</h1>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class=" ">
+            <div class="footer-container">
+                <span>Wake up, Neo...</span>
+            </div>
+        </footer>        
     </body>
 </html>
